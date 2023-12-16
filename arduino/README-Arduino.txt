@@ -4,7 +4,7 @@ then you should connect the esp32 to your laptop (ensure you have the necessary 
 once you select your board in tools, you should also select the port. then everything is set for your esp32.
 all that's left is to connect the sensors to the board.
 
-if you are not using the board ensure that the pin you are connecting the sensors to are (VIN which is 5v), (GND the ground), and the rest of the pins are all digital pins.
+if you are not using the board ensure that the pin you are connecting the sensors to are (VIN which is 5v), (GND the ground), and the rest of the pins are all digital pins except for the LDRs (analogue pin).
 
 so now you need to download the libraries corresponding to each sensor.
 
@@ -27,4 +27,4 @@ now for Bluetooth serial, include <BluetoothSerial.h>, then declare a varibale f
 
 as for BLE, you can check the example BLE server. and if you want to send the data as we did you can update your code similarly to ours. evrything is explained in the report.
 
-PLEASE MAKE SURE YOU CHANGE THE PIN NUMBERS TO THE WAY YOU CONNECT THEM WHILE MAKING SURE THE PINS ARE DIGITAL.
+PLEASE MAKE SURE YOU CHANGE THE PIN NUMBERS TO THE WAY YOU CONNECT THEM WHILE MAKING SURE THE PINS ARE DIGITAL EXCEPT FOR LDR (ANALOGUE PIN).
